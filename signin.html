@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <style>
+       /* styles.css */
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.signin-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.signin-box h2 {
+    color: #333;
+}
+
+.signin-box form {
+    margin-top: 20px;
+}
+
+.signin-box label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.signin-box input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.signin-box button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signin-box button:hover {
+    background-color: #2980b9;
+}
+
+.signin-box p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.signin-box p a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signin-box p a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body> 
+    <div class="container">
+    <div class="signin-box">
+        <h2>Sign In</h2>
+        <form action="signin_process.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Sign In</button>
+        </form>
+       
+    </div>
+</div>
+</body>
+</html>
